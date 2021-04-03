@@ -22,7 +22,6 @@ static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%"
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
-
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
@@ -89,9 +88,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
-	{ 0,                            XF86XK_AudioMute, spawn, {.v = mutevol } },
-	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
+	{ 0,                            XF86XK_AudioLowerVolume,   spawn, {.v = downvol}},
+	{ 0,                            XF86XK_AudioMute, spawn,   {.v = mutevol}},
+	{ 0,                            XF86XK_AudioRaiseVolume,   spawn, {.v = upvol}},
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
