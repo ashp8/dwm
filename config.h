@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 #include <X11/XF86keysym.h>
 /* appearance */
-static const unsigned int borderpx  = 7;     /* border pixel of windows */
+static const unsigned int borderpx  = 5;     /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 5;     /* 0 means no bar */
 static const int topbar             = 2;        /* 0 means bottom bar */
@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 static const char col_1[]  = "#282c34"; /* background color of bar */
 static const char col_2[]  = "#282c34"; /* border color unfocused windows */
 static const char col_3[]  = "#d7d7d7";
-static const char col_4[]  = "#924441"; /* border color focused windows and tags */
+static const char col_4[]  = "#1f0233"; /* border color focused windows and tags */
 
 static const unsigned int baralpha    = 0x00; 
 //static const unsigned int borderalpha = OPAQUE;
