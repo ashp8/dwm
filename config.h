@@ -6,8 +6,8 @@ static const unsigned int snap      = 0;       /* snap pixel */
 static const unsigned int gappx     = 5;       /* gap pixel */
 static const int showbar            = 5;     /* 0 means no bar */
 static const int topbar             = 3;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Source Code Pro:size=11" };
-static const char dmenufont[]       = "Source Code Pro:size=11";
+static const char *fonts[]          = { "Source Code Pro:size=10" };
+static const char dmenufont[]       = "Source Code Pro:size=10";
 
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -39,8 +39,8 @@ static const char *colors[][3]        = {
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
-static const char *brightness_up[]  =   { "xbacklight", "+5", NULL };
-static const char *brightness_down[]  = { "xbacklight", "-10", NULL };
+static const char *brightness_up[]  =   { "brightnessctl", "5%+", NULL };
+static const char *brightness_down[]  = { "brightnessctl", "5%-", NULL };
 
 
 /* tagging */
@@ -82,7 +82,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "terminator", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
